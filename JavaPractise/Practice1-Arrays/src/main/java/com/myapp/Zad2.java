@@ -1,3 +1,5 @@
+package com.myapp;
+
 public class Zad2 {
 
   public static float average(int  a[]) {
