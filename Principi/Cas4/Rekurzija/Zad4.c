@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 int okreni(int a, int result) {
-  if (a == 0) {
+  if (a == 0)
     return result;
-  } else {
-    int temp = a % 10;
-    result = result * 10 + temp;
-    return okreni(a/10, result);
-  }
+  return okreni(a / 10, result * 10 + a % 10);
 }
 
 int main() {

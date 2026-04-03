@@ -7,11 +7,7 @@ int oddDigits(int n) {
   int cifra = n % 10;
   int ostatak = oddDigits(n / 10);
 
-  if (cifra % 2 != 0) {
-    return ostatak * 100 + cifra * 10;
-  } else {
-    return ostatak * 10 + cifra;
-  }
+  return cifra % 2 != 0 ? ostatak * 100 + cifra * 10 : ostatak * 10 + cifra;
 }
 
 int main() {
