@@ -30,28 +30,22 @@ public class Zad1 {
 
   private boolean dfs(int[][] mat, boolean[][] visited, int x, int y) {
 
-    // 1. granice
     if (x < 0 || y < 0 || x >= mat.length || y >= mat.length)
       return false;
 
-    // 2. zid ili već posjećeno
     if (mat[x][y] == 0 || visited[x][y])
       return false;
 
-    // 3. cilj
     if (mat[x][y] == 2)
       return true;
 
-    // 4. označi
     visited[x][y] = true;
 
-    // 5. idi u 8 smjerova
     for (int i = 0; i < 8; i++) {
       if (dfs(mat, visited, x + dx[i], y + dy[i]))
         return true;
     }
 
-    // 6. nema puta
     return false;
   }
 
