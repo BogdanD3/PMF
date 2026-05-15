@@ -12,7 +12,7 @@ void makeArray(int *end_of_arr, int n) {
 
 void printArray(int *arr, int n) {
   if (n == 0) {
-    printf("%d", *arr);
+    printf("%d", arr[0]);
     return;
   }
   printArray(arr, n - 1);

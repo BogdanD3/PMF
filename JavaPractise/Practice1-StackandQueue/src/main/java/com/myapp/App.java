@@ -91,40 +91,41 @@ public class App {
     // int n2 = 10;
     //
     // Zad18.longestSubstrings(genome2, k2, n2);
-    //Zad19.voda(5, 3, 6);
-    int n1 = 2;
-    int[][] knights1 = {
-      Zad20.parse("G8"),
-      Zad20.parse("B8")
-    };
-
-    System.out.println("TEST 1:");
-    Zad20.solve(n1, knights1);
-
-    System.out.println("----------------");
-
-    // TEST 2
-    int n2 = 3;
-    int[][] knights2 = {
-      Zad20.parse("C6"),
-      Zad20.parse("E6"),
-      Zad20.parse("G6")
-    };
-
-    System.out.println("TEST 2:");
-    Zad20.solve(n2, knights2);
-
-    System.out.println("----------------");
-
-    // TEST 3
-    int n3 = 3;
-    int[][] knights3 = {
-      Zad20.parse("F4"),
-      Zad20.parse("C7"),
-      Zad20.parse("H6")
-    };
-
-    System.out.println("TEST 3:");
-    Zad20.solve(n3, knights3);
+    // Zad19.voda(5, 3, 6);
+    // int n1 = 2;
+    // int[][] knights1 = {
+    // Zad20.parse("G8"),
+    // Zad20.parse("B8")
+    // };
+    //
+    // System.out.println("TEST 1:");
+    // Zad20.solve(n1, knights1);
+    //
+    // System.out.println("----------------");
+    //
+    // // TEST 2
+    // int n2 = 3;
+    // int[][] knights2 = {
+    // Zad20.parse("C6"),
+    // Zad20.parse("E6"),
+    // Zad20.parse("G6")
+    // };
+    //
+    // System.out.println("TEST 2:");
+    // Zad20.solve(n2, knights2);
+    //
+    // System.out.println("----------------");
+    //
+    // // TEST 3
+    // int n3 = 3;
+    // int[][] knights3 = {
+    // Zad20.parse("F4"),
+    // Zad20.parse("C7"),
+    // Zad20.parse("H6")
+    // };
+    //
+    // System.out.println("TEST 3:");
+    // Zad20.solve(n3, knights3);
+    prvi.path();
   }
 }

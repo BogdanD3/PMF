@@ -2,7 +2,7 @@
 
 int zad8(int x, int n) {
   if (n == 0)
-    return 1; // x^0 = 1
+    return 1; 
   if (n % 2 != 0)
     return x * zad8(x * x, (n - 1) / 2);
   else
