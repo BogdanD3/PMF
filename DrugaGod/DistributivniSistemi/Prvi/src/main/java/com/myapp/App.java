@@ -1,13 +1,18 @@
 package com.myapp;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+
+    public static void main(String[] args) {
+        MyThread1 mojThread = new MyThread1();
+        mojThread.start();
+
+        for(int i = 0; i < 10000; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch(InterruptedException e) {
+                System.out.println("Desila se greska");
+            }
+            System.out.println(i);
+        }
     }
 }
